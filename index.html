@@ -120,30 +120,32 @@
       </thead>
       <tbody>
         <tr>
-          <td class="brand" rowspan="2" style="font-family:var(--mono);color:var(--accent);font-size:16px;font-weight:600;">CA Invest Floripa</td>
+          <td class="brand" rowspan="3" style="font-family:var(--mono);color:var(--accent);font-size:16px;font-weight:600;">CA Invest Floripa</td>
           <td class="brand">1) Reconhecimento [Topo de Funil]</td>
           <td style="text-align:center">R$ 613</td>
         </tr>
         <tr><td class="brand">2) Vendas &middot; Page View [Meio de Funil]</td><td style="text-align:center">R$ 464</td></tr>
+        <tr><td class="brand">3) Leads/Form [Fundo de Funil]</td><td style="text-align:center">R$ 305</td></tr>
       </tbody>
     </table>
     <div class="foot-note">
       Fonte: conector <strong>Meta Ads (MCP)</strong> &mdash; conta CA Invest Floripa (1374497076193374), dados ao vivo da API.
-      Recorte do empreendimento <strong>AP Novo Campeche</strong>: 2 campanhas ativas
-      (<code>01 | [Reconhecimento] | AP Novo Campeche Floripa</code> e <code>02 | [Vendas] AP Novo Campeche</code>),
-      ambas iniciadas em <strong>04/08/2026</strong> e <strong>pausadas desde 18/09/2026</strong> (sem veicula&ccedil;&atilde;o nos 2 &uacute;ltimos dias do per&iacute;odo). A soma dos 2 tipos = <strong>R$ 1.076,86</strong> (bate com o total do recorte).
-      N&atilde;o h&aacute; campanha de Engajamento/Mensagem nem de Lead/Formul&aacute;rio para este empreendimento, e a conta n&atilde;o rastreia compras (sem e-commerce).
-      <strong>Alcance e Frequ&ecirc;ncia</strong> (per&iacute;odo e m&ecirc;s a m&ecirc;s) = valores reais do Gerenciador &mdash; n&atilde;o som&aacute;veis.
+      Recorte do empreendimento <strong>AP Novo Campeche</strong>: 3 campanhas
+      (<code>01 | [Reconhecimento] | AP Novo Campeche Floripa</code>, <code>02 | [Vendas] AP Novo Campeche</code> e <code>03 | [LEADS] Novo Campeche</code>).
+      As duas primeiras come&ccedil;aram em <strong>04/08/2026</strong>; a de Leads &eacute; mais recente, come&ccedil;ou em <strong>10/09/2026</strong> (entregou de 11 a 17/09).
+      A soma dos 3 tipos = <strong>R$ 1.382,00</strong> (bate com o total do recorte).
+      A conta n&atilde;o rastreia compras (sem e-commerce) &mdash; por isso os KPIs seguem o modelo de tr&aacute;fego/funil (v&iacute;deo, alcance, visitas ao site) com Leads somado agora que a campanha de fundo de funil existe.
+      <strong>Alcance e Frequ&ecirc;ncia</strong>: Ago/26 confirmado no Gerenciador; per&iacute;odo e Set/26 voltaram a ser <strong>soma das 3 campanhas</strong> <strong>(*)</strong> com a entrada da campanha de Leads &mdash; a confirmar de novo com o cliente.
     </div>
   </div>
 
   <div class="panel-head" style="margin-bottom:12px;"><h2>1 - Quadro geral de m&eacute;tricas</h2></div>
   <div class="kpi-grid" id="kpiGrid"></div>
   <div class="foot-note" style="margin:-8px 0 24px;">
-    Alcance/Frequ&ecirc;ncia = valores reais do Gerenciador: <strong>per&iacute;odo 151.335 / 2,60</strong> &middot; Ago/26 <strong>113.747</strong> / 2,26 &middot; Set/26 <strong>75.292</strong> / 1,82. Alcance n&atilde;o &eacute; som&aacute;vel: a soma dos meses (189.039) fica acima do total do per&iacute;odo (151.335, deduplicado).
-    "Viu Conte&uacute;do (site)" = convers&atilde;o personalizada <em>Viu conte&uacute;do</em> (regra = qualquer PageView em <code>investfloripa.com</code>) &mdash; <strong>1.989</strong> no per&iacute;odo (1.987 na campanha de Vendas + 2 como a&ccedil;&atilde;o secund&aacute;ria na de Reconhecimento).
-    "Viu Conte&uacute;do (ViewContent)" = evento padr&atilde;o do pixel &mdash; <strong>638</strong>.
-    "Conversas iniciadas" = <strong>2</strong> (a&ccedil;&atilde;o secund&aacute;ria &mdash; 1 na campanha de Reconhecimento + 1 na de Vendas &mdash; derivada de custo por a&ccedil;&atilde;o).
+    Ago/26 = Alcance <strong>113.747</strong> / Frequ&ecirc;ncia <strong>2,26</strong> (confirmado no Gerenciador &mdash; m&ecirc;s fechado, s&oacute; 2 campanhas ativas). Per&iacute;odo (157.559 / 2,50) e Set/26 (76.812 / 1,78) agora inclu&iacute;ram a campanha de Leads e voltam a ser <strong>soma das 3 campanhas</strong> <strong>(*)</strong> &mdash; a confirmar o valor real do Gerenciador. Alcance n&atilde;o &eacute; som&aacute;vel.
+    "Viu Conte&uacute;do (site)" = convers&atilde;o personalizada <em>Viu conte&uacute;do</em> (regra = qualquer PageView em <code>investfloripa.com</code>) &mdash; <strong>2.000</strong> no per&iacute;odo (1.987 na campanha de Vendas + 11 na de Leads + 2 na de Reconhecimento, todas como a&ccedil;&atilde;o secund&aacute;ria exceto Vendas).
+    "Viu Conte&uacute;do (ViewContent)" = evento padr&atilde;o do pixel &mdash; <strong>639</strong>.
+    "Conversas iniciadas" = <strong>2</strong> (a&ccedil;&atilde;o secund&aacute;ria &mdash; 1 na campanha de Reconhecimento + 1 na de Vendas). "Leads" = <strong>1</strong> (resultado prim&aacute;rio da campanha de Leads/Form, custo por lead R$ 305,14).
   </div>
 
   <div class="panel">
@@ -206,7 +208,7 @@
     <div class="panel" style="display:flex;flex-direction:column;">
       <div class="panel-head" style="flex-shrink:0;">
         <h2>7 - Investimento por tipo de campanha (funil)</h2>
-        <span class="note">R$ &middot; topo &rarr; meio</span>
+        <span class="note">R$ &middot; topo &rarr; fundo</span>
       </div>
       <div style="flex:1;display:flex;flex-direction:column;justify-content:center;">
         <div id="funnelChart"></div>
@@ -245,56 +247,66 @@
     <div class="foot-note" id="stageFoot1"></div>
   </div>
 
-  <div class="panel">
-    <div class="panel-head">
-      <h2>12 - Detalhamento mensal por m&eacute;trica</h2>
-      <span class="note">14 m&eacute;tricas</span>
-    </div>
-    <div id="metricDetailContainer"></div>
-    <div class="foot-note">S&eacute;rie mensal: Ago/26 = 04&ndash;31/08 &middot; Set/26 = 01&ndash;19/09 (campanhas pausadas desde 18/09). Alcance e Frequ&ecirc;ncia mensais = <strong>valores confirmados pelo cliente</strong> (Gerenciador). Alcance n&atilde;o &eacute; som&aacute;vel: a soma dos meses (189.039) fica acima do total do per&iacute;odo (151.335, deduplicado).</div>
+  <div class="panel stage-panel">
+    <div class="panel-head"><h2>12 - Leads/Form [Fundo de Funil]</h2></div>
+    <div class="stage-card-row" id="stageCards2"></div>
+    <div class="foot-note" id="stageFoot2"></div>
   </div>
 
   <div class="panel">
     <div class="panel-head">
-      <h2>13 - Notas metodol&oacute;gicas &amp; defini&ccedil;&otilde;es</h2>
+      <h2>13 - Detalhamento mensal por m&eacute;trica</h2>
+      <span class="note">15 m&eacute;tricas</span>
+    </div>
+    <div id="metricDetailContainer"></div>
+    <div class="foot-note">S&eacute;rie mensal: Ago/26 = 04&ndash;31/08 (s&oacute; Reconhecimento e Vendas) &middot; Set/26 = 01&ndash;19/09 (as 3 campanhas, Leads entrou em 10/09). Alcance/Frequ&ecirc;ncia de <strong>Ago/26</strong> = confirmados no Gerenciador (m&ecirc;s fechado); os de <strong>Set/26</strong> voltaram a ser soma aproximada das 3 campanhas <strong>(*)</strong> &mdash; a reconfirmar. Alcance n&atilde;o &eacute; som&aacute;vel.</div>
+  </div>
+
+  <div class="panel">
+    <div class="panel-head">
+      <h2>14 - Notas metodol&oacute;gicas &amp; defini&ccedil;&otilde;es</h2>
       <span class="note">como ler os n&uacute;meros</span>
     </div>
     <table class="notes-table">
       <tr>
         <td class="nkey">Fonte dos dados</td>
-        <td class="nval">Conector <strong>Meta Ads (MCP)</strong>, dados ao vivo da conta <strong>CA Invest Floripa</strong> (1374497076193374). Recorte: 2 campanhas do empreendimento <strong>AP Novo Campeche</strong>. Per&iacute;odo <strong>04 ago &ndash; 19 set 2026</strong>. Janela de atribui&ccedil;&atilde;o padr&atilde;o: <strong>7 dias clique / 1 dia visualiza&ccedil;&atilde;o</strong>.</td>
+        <td class="nval">Conector <strong>Meta Ads (MCP)</strong>, dados ao vivo da conta <strong>CA Invest Floripa</strong> (1374497076193374). Recorte: 3 campanhas do empreendimento <strong>AP Novo Campeche</strong>. Per&iacute;odo <strong>04 ago &ndash; 19 set 2026</strong>. Janela de atribui&ccedil;&atilde;o padr&atilde;o: <strong>7 dias clique / 1 dia visualiza&ccedil;&atilde;o</strong>.</td>
       </tr>
       <tr>
         <td class="nkey">Alcance e Frequ&ecirc;ncia</td>
-        <td class="nval">Valores <strong>reais do Gerenciador</strong>. Per&iacute;odo: Alcance <strong>151.335</strong>, Frequ&ecirc;ncia <strong>2,60</strong>. M&ecirc;s a m&ecirc;s (tamb&eacute;m confirmado pelo cliente): Ago/26 <strong>113.747</strong> / 2,26 &middot; Set/26 <strong>75.292</strong> / 1,82. <strong>N&atilde;o s&atilde;o som&aacute;veis</strong> &mdash; a soma dos meses (189.039) fica acima do total do per&iacute;odo (151.335) porque a mesma pessoa &eacute; contada em mais de um recorte. Ago/26 &eacute; m&ecirc;s fechado e n&atilde;o &eacute; recalculado nas atualiza&ccedil;&otilde;es seguintes.</td>
+        <td class="nval"><strong>Ago/26</strong>: Alcance <strong>113.747</strong> / Frequ&ecirc;ncia <strong>2,26</strong> &mdash; confirmados no Gerenciador, m&ecirc;s fechado (n&atilde;o recalculados nas atualiza&ccedil;&otilde;es seguintes; s&oacute; Reconhecimento e Vendas estavam ativas). <strong>Per&iacute;odo</strong> (157.559 / 2,50) e <strong>Set/26</strong> (76.812 / 1,78) marcados <strong>(*)</strong>: soma das 3 campanhas, n&atilde;o deduplicada &mdash; a campanha de Leads entrou no recorte e o valor precisa ser reconfirmado no Gerenciador. <strong>Alcance n&atilde;o &eacute; som&aacute;vel</strong>: a soma dos recortes fica acima do total porque a mesma pessoa &eacute; contada mais de uma vez.</td>
       </tr>
       <tr>
         <td class="nkey">Tipos de campanha</td>
-        <td class="nval"><code>[Reconhecimento]</code> &rarr; Reconhecimento (Topo, objetivo OUTCOME_AWARENESS) &middot; <code>[Vendas]</code> &rarr; Vendas &middot; Page View (Meio, objetivo OUTCOME_SALES, otimizada pela convers&atilde;o <em>Viu conte&uacute;do</em>). A soma dos 2 tipos = investimento total do recorte (R$ 1.076,86). Impress&otilde;es, Cliques, LPV e V&iacute;deo batem exatamente entre a soma por tipo/m&ecirc;s e o total.</td>
+        <td class="nval"><code>[Reconhecimento]</code> &rarr; Reconhecimento (Topo, objetivo OUTCOME_AWARENESS) &middot; <code>[Vendas]</code> &rarr; Vendas &middot; Page View (Meio, objetivo OUTCOME_SALES, otimizada pela convers&atilde;o <em>Viu conte&uacute;do</em>) &middot; <code>[LEADS]</code> &rarr; Leads/Form (Fundo, objetivo OUTCOME_LEADS, formul&aacute;rio instant&acirc;neo). A soma dos 3 tipos = investimento total do recorte (R$ 1.382,00). Impress&otilde;es, Cliques, LPV e V&iacute;deo batem exatamente entre a soma por tipo/m&ecirc;s e o total.</td>
       </tr>
       <tr>
         <td class="nkey">Viu Conte&uacute;do (site)</td>
-        <td class="nval">Convers&atilde;o <strong>personalizada</strong> da conta &mdash; regra: qualquer PageView em <code>investfloripa.com</code>. <strong>1.989</strong> no per&iacute;odo: 1.987 otimizadas pela campanha de Vendas + 2 geradas como <strong>a&ccedil;&atilde;o secund&aacute;ria</strong> na de Reconhecimento.</td>
+        <td class="nval">Convers&atilde;o <strong>personalizada</strong> da conta &mdash; regra: qualquer PageView em <code>investfloripa.com</code>. <strong>2.000</strong> no per&iacute;odo: 1.987 otimizadas pela campanha de Vendas + 11 geradas como <strong>a&ccedil;&atilde;o secund&aacute;ria</strong> na de Leads + 2 como a&ccedil;&atilde;o secund&aacute;ria na de Reconhecimento.</td>
       </tr>
       <tr>
         <td class="nkey">Viu Conte&uacute;do (ViewContent)</td>
-        <td class="nval">Evento <strong>padr&atilde;o</strong> do pixel (ViewContent / omni). <strong>638</strong> no per&iacute;odo, todo na campanha de Vendas.</td>
+        <td class="nval">Evento <strong>padr&atilde;o</strong> do pixel (ViewContent / omni). <strong>639</strong> no per&iacute;odo: 638 na campanha de Vendas + 1 na de Leads.</td>
       </tr>
       <tr>
         <td class="nkey">Visualiza&ccedil;&atilde;o de p&aacute;gina (LPV)</td>
-        <td class="nval">Landing page views &mdash; carregamento completo da p&aacute;gina de destino ap&oacute;s o clique. <strong>1.937</strong>, todo na campanha de Vendas (a de Reconhecimento otimiza por alcance e n&atilde;o registra LPV).</td>
+        <td class="nval">Landing page views &mdash; carregamento completo da p&aacute;gina de destino ap&oacute;s o clique. <strong>1.938</strong> no per&iacute;odo: 1.937 na campanha de Vendas + 1 na de Leads (a de Reconhecimento otimiza por alcance e n&atilde;o registra LPV).</td>
       </tr>
       <tr>
         <td class="nkey">Conversas iniciadas</td>
-        <td class="nval"><strong>2</strong> no per&iacute;odo &mdash; <strong>a&ccedil;&atilde;o secund&aacute;ria</strong> em ambas as campanhas (nenhuma campanha deste empreendimento tem mensagem como objetivo). Derivada de <code>cost_per_action_type</code>: Reconhecimento R$ 612,98 &divide; R$ 612,98 = 1 &middot; Vendas R$ 463,88 &divide; R$ 463,88 = 1. N&atilde;o h&aacute; quebra mensal confi&aacute;vel via API.</td>
+        <td class="nval"><strong>2</strong> no per&iacute;odo &mdash; <strong>a&ccedil;&atilde;o secund&aacute;ria</strong> em Reconhecimento e Vendas (nenhuma campanha deste empreendimento tem mensagem como objetivo; a de Leads n&atilde;o gerou nenhuma). Derivada de <code>cost_per_action_type</code>: Reconhecimento R$ 612,98 &divide; R$ 612,98 = 1 &middot; Vendas R$ 463,88 &divide; R$ 463,88 = 1. N&atilde;o h&aacute; quebra mensal confi&aacute;vel via API.</td>
+      </tr>
+      <tr>
+        <td class="nkey">Leads</td>
+        <td class="nval">Envio de <strong>formul&aacute;rio instant&acirc;neo</strong> da Meta &mdash; resultado prim&aacute;rio da campanha <code>03 | [LEADS] Novo Campeche</code>. <strong>1</strong> lead no per&iacute;odo, custo por lead <strong>R$ 305,14</strong>. Campanha come&ccedil;ou em 10/09/2026 e entregou de 11 a 17/09 (R$ 305,14 de investimento, 3.152 impress&otilde;es, 1.707 de alcance).</td>
       </tr>
       <tr>
         <td class="nkey">CTR (cliques no link)</td>
-        <td class="nval">Cliques no link &divide; impress&otilde;es. <strong>0,59%</strong> no per&iacute;odo (Reconhecimento 0,05% &middot; Vendas 3,79% &mdash; objetivos muito diferentes puxam a m&eacute;dia).</td>
+        <td class="nval">Cliques no link &divide; impress&otilde;es. <strong>0,61%</strong> no per&iacute;odo (Reconhecimento 0,05% &middot; Vendas 3,82% &middot; Leads 1,46% &mdash; objetivos muito diferentes puxam a m&eacute;dia).</td>
       </tr>
       <tr class="hl">
-        <td class="nkey">Sem Lead / sem e-commerce</td>
-        <td class="nval">Este empreendimento <strong>n&atilde;o tem</strong> campanha de Lead/Formul&aacute;rio, e a conta <strong>n&atilde;o rastreia compras</strong>. Por isso os 12 KPIs seguem o modelo de <strong>tr&aacute;fego / topo-meio de funil</strong> (v&iacute;deo, alcance, visitas ao site) em vez de Receita/ROAS.</td>
+        <td class="nkey">Sem e-commerce</td>
+        <td class="nval">Esta conta <strong>n&atilde;o rastreia compras</strong> (sem e-commerce). Por isso os KPIs seguem o modelo de <strong>tr&aacute;fego / funil completo</strong> (v&iacute;deo, alcance, visitas ao site, Viu Conte&uacute;do) em vez de Receita/ROAS, com <strong>Leads</strong> somado agora que o empreendimento tem uma campanha de fundo de funil.</td>
       </tr>
     </table>
   </div>
@@ -303,7 +315,7 @@
 </div>
 
 <script>
-const DATA = {"period": "04 ago — 19 set 2026", "account": "CA Invest Floripa (1374497076193374)", "daily": [{"Day": "2026-08-04", "Impressions": 1701, "PageViews": 0, "LinkClicks": 1}, {"Day": "2026-08-05", "Impressions": 6245, "PageViews": 0, "LinkClicks": 0}, {"Day": "2026-08-06", "Impressions": 6492, "PageViews": 0, "LinkClicks": 5}, {"Day": "2026-08-07", "Impressions": 4813, "PageViews": 0, "LinkClicks": 2}, {"Day": "2026-08-08", "Impressions": 5683, "PageViews": 0, "LinkClicks": 5}, {"Day": "2026-08-09", "Impressions": 6396, "PageViews": 0, "LinkClicks": 6}, {"Day": "2026-08-10", "Impressions": 4138, "PageViews": 0, "LinkClicks": 4}, {"Day": "2026-08-11", "Impressions": 4445, "PageViews": 0, "LinkClicks": 5}, {"Day": "2026-08-12", "Impressions": 5955, "PageViews": 0, "LinkClicks": 2}, {"Day": "2026-08-13", "Impressions": 5323, "PageViews": 0, "LinkClicks": 4}, {"Day": "2026-08-14", "Impressions": 11527, "PageViews": 30, "LinkClicks": 31}, {"Day": "2026-08-15", "Impressions": 7034, "PageViews": 56, "LinkClicks": 73}, {"Day": "2026-08-16", "Impressions": 17847, "PageViews": 141, "LinkClicks": 168}, {"Day": "2026-08-17", "Impressions": 12549, "PageViews": 71, "LinkClicks": 85}, {"Day": "2026-08-18", "Impressions": 9994, "PageViews": 62, "LinkClicks": 75}, {"Day": "2026-08-19", "Impressions": 10131, "PageViews": 44, "LinkClicks": 55}, {"Day": "2026-08-20", "Impressions": 11336, "PageViews": 57, "LinkClicks": 70}, {"Day": "2026-08-21", "Impressions": 10802, "PageViews": 67, "LinkClicks": 82}, {"Day": "2026-08-22", "Impressions": 11749, "PageViews": 91, "LinkClicks": 106}, {"Day": "2026-08-23", "Impressions": 14953, "PageViews": 100, "LinkClicks": 131}, {"Day": "2026-08-24", "Impressions": 12007, "PageViews": 75, "LinkClicks": 94}, {"Day": "2026-08-25", "Impressions": 9933, "PageViews": 64, "LinkClicks": 72}, {"Day": "2026-08-26", "Impressions": 10240, "PageViews": 59, "LinkClicks": 70}, {"Day": "2026-08-27", "Impressions": 10428, "PageViews": 60, "LinkClicks": 70}, {"Day": "2026-08-28", "Impressions": 10695, "PageViews": 65, "LinkClicks": 78}, {"Day": "2026-08-29", "Impressions": 10404, "PageViews": 63, "LinkClicks": 63}, {"Day": "2026-08-30", "Impressions": 13076, "PageViews": 83, "LinkClicks": 97}, {"Day": "2026-08-31", "Impressions": 11141, "PageViews": 62, "LinkClicks": 72}, {"Day": "2026-09-01", "Impressions": 12163, "PageViews": 65, "LinkClicks": 72}, {"Day": "2026-09-02", "Impressions": 10968, "PageViews": 54, "LinkClicks": 61}, {"Day": "2026-09-03", "Impressions": 10072, "PageViews": 55, "LinkClicks": 65}, {"Day": "2026-09-04", "Impressions": 4494, "PageViews": 18, "LinkClicks": 25}, {"Day": "2026-09-05", "Impressions": 0, "PageViews": 0, "LinkClicks": 0}, {"Day": "2026-09-06", "Impressions": 0, "PageViews": 0, "LinkClicks": 0}, {"Day": "2026-09-07", "Impressions": 0, "PageViews": 0, "LinkClicks": 0}, {"Day": "2026-09-08", "Impressions": 10440, "PageViews": 44, "LinkClicks": 57}, {"Day": "2026-09-09", "Impressions": 14864, "PageViews": 79, "LinkClicks": 92}, {"Day": "2026-09-10", "Impressions": 13789, "PageViews": 76, "LinkClicks": 91}, {"Day": "2026-09-11", "Impressions": 14280, "PageViews": 70, "LinkClicks": 88}, {"Day": "2026-09-12", "Impressions": 13624, "PageViews": 69, "LinkClicks": 80}, {"Day": "2026-09-13", "Impressions": 7904, "PageViews": 59, "LinkClicks": 67}, {"Day": "2026-09-14", "Impressions": 6680, "PageViews": 27, "LinkClicks": 39}, {"Day": "2026-09-15", "Impressions": 6706, "PageViews": 35, "LinkClicks": 44}, {"Day": "2026-09-16", "Impressions": 5435, "PageViews": 27, "LinkClicks": 34}, {"Day": "2026-09-17", "Impressions": 2295, "PageViews": 9, "LinkClicks": 11}, {"Day": "2026-09-18", "Impressions": 0, "PageViews": 0, "LinkClicks": 0}, {"Day": "2026-09-19", "Impressions": 0, "PageViews": 0, "LinkClicks": 0}], "months": ["Ago/26", "Set/26"], "monthly": [{"m": "Ago/26", "spend": 682.69, "reach": 113747, "impressions": 257037, "freq": 2.26, "clicks": 2024, "linkClicks": 1526, "lpv": 1250, "websiteCtr": 0.59, "cpm": 2.66, "videoPlays": 252888, "videoP75": 765, "videoP100": 286, "thruplay": 3239, "viewContent": 505, "viuCustom": 1297, "conversas": 1}, {"m": "Set/26", "spend": 394.17, "reach": 75292, "impressions": 133714, "freq": 1.82, "clicks": 980, "linkClicks": 826, "lpv": 687, "websiteCtr": 0.62, "cpm": 2.95, "videoPlays": 132678, "videoP75": 383, "videoP100": 165, "thruplay": 1433, "viewContent": 133, "viuCustom": 692, "conversas": 1}], "types": [{"key": "recon", "label": "Reconhecimento", "short": "Reconhecimento", "stage": "Topo de Funil", "color": "#ff7a3d", "spend": 612.98, "impressions": 333230, "reach": 125607, "frequency": 2.65, "linkClicks": 155, "lpv": 0, "cpm": 1.84, "videoPlays": 330265, "videoP75": 376, "videoP100": 179, "thruplay": 2006, "viewContent": 0, "viuCustom": 2}, {"key": "vendas", "label": "Vendas · Page View", "short": "Vendas · Page View", "stage": "Meio de Funil", "color": "#8b5cf6", "spend": 463.88, "impressions": 57521, "reach": 30245, "frequency": 1.9, "linkClicks": 2197, "lpv": 1937, "cpm": 8.06, "videoPlays": 55301, "videoP75": 772, "videoP100": 272, "thruplay": 2666, "viewContent": 638, "viuCustom": 1987}], "typeMonth": {"labels": ["Ago/26", "Set/26"], "totals": [682.69, 394.17], "recon": [411.27, 201.71], "vendas": [271.42, 192.46]}, "total": {"spend": 1076.86, "impressions": 390751, "reach": 151335, "frequency": 2.6, "clicks": 3004, "linkClicks": 2352, "lpv": 1937, "websiteCtr": 0.6, "cpm": 2.76, "cpc": 0.36, "costPerLinkClick": 0.46, "videoPlays": 385566, "videoP75": 1148, "videoP100": 451, "thruplay": 4672, "viewContent": 638, "viuCustom": 1989, "conversas": 2}};
+const DATA = {"period": "04 ago — 19 set 2026", "account": "CA Invest Floripa (1374497076193374)", "daily": [{"Day": "2026-08-04", "Impressions": 1701, "PageViews": 0, "LinkClicks": 1}, {"Day": "2026-08-05", "Impressions": 6245, "PageViews": 0, "LinkClicks": 0}, {"Day": "2026-08-06", "Impressions": 6492, "PageViews": 0, "LinkClicks": 5}, {"Day": "2026-08-07", "Impressions": 4813, "PageViews": 0, "LinkClicks": 2}, {"Day": "2026-08-08", "Impressions": 5683, "PageViews": 0, "LinkClicks": 5}, {"Day": "2026-08-09", "Impressions": 6396, "PageViews": 0, "LinkClicks": 6}, {"Day": "2026-08-10", "Impressions": 4138, "PageViews": 0, "LinkClicks": 4}, {"Day": "2026-08-11", "Impressions": 4445, "PageViews": 0, "LinkClicks": 5}, {"Day": "2026-08-12", "Impressions": 5955, "PageViews": 0, "LinkClicks": 2}, {"Day": "2026-08-13", "Impressions": 5323, "PageViews": 0, "LinkClicks": 4}, {"Day": "2026-08-14", "Impressions": 11527, "PageViews": 30, "LinkClicks": 31}, {"Day": "2026-08-15", "Impressions": 7034, "PageViews": 56, "LinkClicks": 73}, {"Day": "2026-08-16", "Impressions": 17847, "PageViews": 141, "LinkClicks": 168}, {"Day": "2026-08-17", "Impressions": 12549, "PageViews": 71, "LinkClicks": 85}, {"Day": "2026-08-18", "Impressions": 9994, "PageViews": 62, "LinkClicks": 75}, {"Day": "2026-08-19", "Impressions": 10131, "PageViews": 44, "LinkClicks": 55}, {"Day": "2026-08-20", "Impressions": 11336, "PageViews": 57, "LinkClicks": 70}, {"Day": "2026-08-21", "Impressions": 10802, "PageViews": 67, "LinkClicks": 82}, {"Day": "2026-08-22", "Impressions": 11749, "PageViews": 91, "LinkClicks": 106}, {"Day": "2026-08-23", "Impressions": 14953, "PageViews": 100, "LinkClicks": 131}, {"Day": "2026-08-24", "Impressions": 12007, "PageViews": 75, "LinkClicks": 94}, {"Day": "2026-08-25", "Impressions": 9933, "PageViews": 64, "LinkClicks": 72}, {"Day": "2026-08-26", "Impressions": 10240, "PageViews": 59, "LinkClicks": 70}, {"Day": "2026-08-27", "Impressions": 10428, "PageViews": 60, "LinkClicks": 70}, {"Day": "2026-08-28", "Impressions": 10695, "PageViews": 65, "LinkClicks": 78}, {"Day": "2026-08-29", "Impressions": 10404, "PageViews": 63, "LinkClicks": 63}, {"Day": "2026-08-30", "Impressions": 13076, "PageViews": 83, "LinkClicks": 97}, {"Day": "2026-08-31", "Impressions": 11141, "PageViews": 62, "LinkClicks": 72}, {"Day": "2026-09-01", "Impressions": 12163, "PageViews": 65, "LinkClicks": 72}, {"Day": "2026-09-02", "Impressions": 10968, "PageViews": 54, "LinkClicks": 61}, {"Day": "2026-09-03", "Impressions": 10072, "PageViews": 55, "LinkClicks": 65}, {"Day": "2026-09-04", "Impressions": 4494, "PageViews": 18, "LinkClicks": 25}, {"Day": "2026-09-05", "Impressions": 0, "PageViews": 0, "LinkClicks": 0}, {"Day": "2026-09-06", "Impressions": 0, "PageViews": 0, "LinkClicks": 0}, {"Day": "2026-09-07", "Impressions": 0, "PageViews": 0, "LinkClicks": 0}, {"Day": "2026-09-08", "Impressions": 10440, "PageViews": 44, "LinkClicks": 57}, {"Day": "2026-09-09", "Impressions": 14864, "PageViews": 79, "LinkClicks": 92}, {"Day": "2026-09-10", "Impressions": 13789, "PageViews": 76, "LinkClicks": 91}, {"Day": "2026-09-11", "Impressions": 14730, "PageViews": 70, "LinkClicks": 94}, {"Day": "2026-09-12", "Impressions": 14011, "PageViews": 69, "LinkClicks": 83}, {"Day": "2026-09-13", "Impressions": 8717, "PageViews": 59, "LinkClicks": 84}, {"Day": "2026-09-14", "Impressions": 7167, "PageViews": 28, "LinkClicks": 49}, {"Day": "2026-09-15", "Impressions": 7193, "PageViews": 35, "LinkClicks": 47}, {"Day": "2026-09-16", "Impressions": 5789, "PageViews": 27, "LinkClicks": 36}, {"Day": "2026-09-17", "Impressions": 2469, "PageViews": 9, "LinkClicks": 16}, {"Day": "2026-09-18", "Impressions": 0, "PageViews": 0, "LinkClicks": 0}, {"Day": "2026-09-19", "Impressions": 0, "PageViews": 0, "LinkClicks": 0}], "months": ["Ago/26", "Set/26"], "monthly": [{"m": "Ago/26", "spend": 682.69, "reach": 113747, "impressions": 257037, "freq": 2.26, "clicks": 2024, "linkClicks": 1526, "lpv": 1250, "websiteCtr": 0.59, "cpm": 2.66, "videoPlays": 252888, "videoP75": 765, "videoP100": 286, "thruplay": 3239, "viewContent": 505, "viuCustom": 1297, "conversas": 1, "leads": 0}, {"m": "Set/26", "spend": 699.31, "reach": 76812, "impressions": 136866, "freq": 1.78, "clicks": 1047, "linkClicks": 872, "lpv": 688, "websiteCtr": 0.64, "cpm": 5.11, "videoPlays": 132678, "videoP75": 383, "videoP100": 165, "thruplay": 1433, "viewContent": 134, "viuCustom": 703, "conversas": 1, "leads": 1}], "types": [{"key": "recon", "label": "Reconhecimento", "short": "Reconhecimento", "stage": "Topo de Funil", "color": "#ff7a3d", "spend": 612.98, "impressions": 333230, "reach": 125607, "frequency": 2.65, "linkClicks": 155, "lpv": 0, "cpm": 1.84, "videoPlays": 330265, "videoP75": 376, "videoP100": 179, "thruplay": 2006, "viewContent": 0, "viuCustom": 2, "leads": 0}, {"key": "vendas", "label": "Vendas · Page View", "short": "Vendas · Page View", "stage": "Meio de Funil", "color": "#8b5cf6", "spend": 463.88, "impressions": 57521, "reach": 30245, "frequency": 1.9, "linkClicks": 2197, "lpv": 1937, "cpm": 8.06, "videoPlays": 55301, "videoP75": 772, "videoP100": 272, "thruplay": 2666, "viewContent": 638, "viuCustom": 1987, "leads": 0}, {"key": "leads", "label": "Leads/Form", "short": "Leads/Form", "stage": "Fundo de Funil", "color": "#22d3ee", "spend": 305.14, "impressions": 3152, "reach": 1707, "frequency": 1.85, "linkClicks": 46, "lpv": 1, "cpm": 96.81, "videoPlays": 0, "videoP75": 0, "videoP100": 0, "thruplay": 0, "viewContent": 1, "viuCustom": 11, "leads": 1}], "typeMonth": {"labels": ["Ago/26", "Set/26"], "totals": [682.69, 699.31], "recon": [411.27, 201.71], "vendas": [271.42, 192.46], "leads": [0, 305.14]}, "total": {"spend": 1382.0, "impressions": 393903, "reach": 157559, "frequency": 2.5, "clicks": 3071, "linkClicks": 2398, "lpv": 1938, "websiteCtr": 0.61, "cpm": 3.51, "cpc": 0.45, "costPerLinkClick": 0.58, "videoPlays": 385566, "videoP75": 1148, "videoP100": 451, "thruplay": 4672, "viewContent": 639, "viuCustom": 2000, "conversas": 2, "leads": 1}};
 
 function fmtMoney(v){return 'R$ ' + Number(v).toLocaleString('pt-BR',{maximumFractionDigits:0});}
 function fmtMoney2(v){if(!isFinite(v))return '\u2014';return 'R$ ' + Number(v).toLocaleString('pt-BR',{minimumFractionDigits:2,maximumFractionDigits:2});}
@@ -317,10 +329,10 @@ const months = DATA.months;
 const kpis = [
   {label:'Investimento total', value:fmtMoney2(t.spend), cls:'accent', series:M.map(m=>m.spend), color:'#ff7a3d', fmt:fmtMoney2},
   {label:'Impress\u00f5es', value:fmtNum(t.impressions), cls:'green', series:M.map(m=>m.impressions), color:'#3ddc97', fmt:fmtNum},
-  {label:'Alcance', value:fmtNum(t.reach), cls:'accent', sub:'real do Gerenciador \u00b7 n\u00e3o som\u00e1vel', series:M.map(m=>m.reach), color:'#ff7a3d', fmt:fmtNum},
-  {label:'Frequ\u00eancia', value:t.frequency.toFixed(2), cls:'green', sub:'real do Gerenciador', series:M.map(m=>m.freq), color:'#3ddc97', fmt:v=>v.toFixed(2)},
+  {label:'Alcance (*)', value:fmtNum(t.reach), cls:'accent', sub:'soma 3 camp. \u00b7 a confirmar', series:M.map(m=>m.reach), color:'#ff7a3d', fmt:fmtNum},
+  {label:'Frequ\u00eancia (*)', value:t.frequency.toFixed(2), cls:'green', sub:'soma aprox. \u00b7 a confirmar', series:M.map(m=>m.freq), color:'#3ddc97', fmt:v=>v.toFixed(2)},
   {label:'Cliques no link', value:fmtNum(t.linkClicks), cls:'accent', series:M.map(m=>m.linkClicks), color:'#ff7a3d', fmt:fmtNum},
-  {label:'Visualiza\u00e7\u00e3o de p\u00e1gina (LPV)', value:fmtNum(t.lpv), cls:'green', sub:'toda na camp. de Vendas', series:M.map(m=>m.lpv), color:'#3ddc97', fmt:fmtNum},
+  {label:'Visualiza\u00e7\u00e3o de p\u00e1gina (LPV)', value:fmtNum(t.lpv), cls:'green', sub:'Vendas + Leads', series:M.map(m=>m.lpv), color:'#3ddc97', fmt:fmtNum},
   {label:'CTR (cliques no link)', value:t.websiteCtr.toFixed(2)+'%', cls:'accent', sub:'link \u00f7 impress\u00f5es', series:M.map(m=>m.websiteCtr), color:'#ff7a3d', fmt:v=>v.toFixed(2)+'%'},
   {label:'CPM', value:fmtMoney2(t.cpm), cls:'green', series:M.map(m=>m.cpm), color:'#3ddc97', fmt:fmtMoney2},
   {label:'Video Plays', value:fmtNum(t.videoPlays), cls:'accent', series:M.map(m=>m.videoPlays), color:'#ff7a3d', fmt:fmtNum},
@@ -329,6 +341,7 @@ const kpis = [
   {label:'Viu Conte\u00fado (site)', value:fmtNum(t.viuCustom), cls:'green', sub:'conv. person. \u00b7 PageView investfloripa.com', series:M.map(m=>m.viuCustom), color:'#3ddc97', fmt:fmtNum},
   {label:'Viu Conte\u00fado (ViewContent)', value:fmtNum(t.viewContent), cls:'accent', sub:'evento padr\u00e3o do pixel', series:M.map(m=>m.viewContent), color:'#ff7a3d', fmt:fmtNum},
   {label:'Conversas iniciadas', value:fmtNum(t.conversas), cls:'green', sub:'a\u00e7\u00e3o secund\u00e1ria \u00b7 2 campanhas', series:M.map(m=>m.conversas), color:'#3ddc97', fmt:fmtNum},
+  {label:'Leads', value:fmtNum(t.leads), cls:'accent', sub:'formul\u00e1rio \u00b7 camp. Leads/Form', series:M.map(m=>m.leads), color:'#ff7a3d', fmt:fmtNum},
 ];
 
 document.getElementById('kpiGrid').innerHTML = kpis.map((k,i)=>`
@@ -401,7 +414,7 @@ new Chart(document.getElementById('dailyChart'), {
     }}
 });
 
-// ---- 12 - metric detail ----
+// ---- 13 - metric detail ----
 document.getElementById('metricDetailContainer').innerHTML = kpis.map((k,i)=>`
   <div class="metric-row">
     <div class="metric-row-head"><h3>${k.label}</h3><span class="total">total: ${k.value}</span></div>
@@ -486,9 +499,9 @@ new Chart(document.getElementById('contentViewsChart'), {
     scales:{x:{ticks:{color:'#8b919d',autoSkip:true,maxRotation:0,maxTicksLimit:10,font:{size:9}},grid:{color:'#2a2e38'}}, y:{ticks:{color:'#8b919d',font:{size:9}},grid:{color:'#2a2e38'}}}}
 });
 
-// ---- 7 - funnel ----
-const funOrder = ['recon','vendas'];
-const clips = ['polygon(3% 0,97% 0,80% 100%,20% 100%)','polygon(20% 0,80% 0,66% 100%,34% 100%)'];
+// ---- 7 - funnel (3 estagios) ----
+const funOrder = ['recon','vendas','leads'];
+const clips = ['polygon(3% 0,97% 0,84% 100%,16% 100%)','polygon(16% 0,84% 0,71% 100%,29% 100%)','polygon(29% 0,71% 0,58% 100%,42% 100%)'];
 const funnelTypes = funOrder.map((k,i)=>{const ty=DATA.types.find(x=>x.key===k);return {label:ty.label, short:ty.short, value:ty.spend, color:ty.color, clip:clips[i]};});
 document.getElementById('funnelChart').innerHTML = funnelTypes.map(s=>`
   <div class="funnel-stage" style="width:min(100%,460px);">
@@ -541,7 +554,7 @@ document.getElementById('monthTypeGrid').innerHTML = TM.labels.map((mo,i)=>`
     <div class="mlegend">${tmNames.map((n,j)=>`<span style="display:flex;align-items:center;gap:4px;"><span style="width:8px;height:8px;border-radius:2px;background:${tmColors[j]};display:inline-block;"></span>${n}</span>`).join('')}</div>
   </div>`).join('');
 TM.labels.forEach((mo,i)=>{
-  const vals = [TM.recon[i], TM.vendas[i]];
+  const vals = [TM.recon[i], TM.vendas[i], TM.leads[i]];
   const totMo = TM.totals[i];
   if(totMo<=0) return;
   const centerText = {id:'ct'+i, afterDatasetsDraw(chart){
@@ -566,9 +579,9 @@ TM.labels.forEach((mo,i)=>{
   });
 });
 
-// ---- 10/11 - stage cards ----
+// ---- 10/11/12 - stage cards ----
 const T = k => DATA.types.find(x=>x.key===k);
-const r_ = T('recon'), v_ = T('vendas');
+const r_ = T('recon'), v_ = T('vendas'), l_ = T('leads');
 const stageCards = [
   [
     {label:'Valor Gasto', value:fmtMoney2(r_.spend)},
@@ -585,6 +598,14 @@ const stageCards = [
     {label:'ViewContent (padr\u00e3o)', value:fmtNum(v_.viewContent)},
     {label:'Cliques no Link', value:fmtNum(v_.linkClicks), note:'CTR '+(v_.linkClicks/v_.impressions*100).toFixed(2)+'%'},
     {label:'CPM', value:fmtMoney2(v_.cpm)}
+  ],
+  [
+    {label:'Valor Gasto', value:fmtMoney2(l_.spend)},
+    {label:'Leads', value:fmtNum(l_.leads)},
+    {label:'Custo por Lead', value:fmtMoney2(safeDiv(l_.spend, l_.leads))},
+    {label:'Impress\u00f5es', value:fmtNum(l_.impressions)},
+    {label:'Cliques no Link', value:fmtNum(l_.linkClicks), note:'CTR '+(l_.linkClicks/l_.impressions*100).toFixed(2)+'%'},
+    {label:'CPM', value:fmtMoney2(l_.cpm)}
   ]
 ];
 stageCards.forEach((cards,i)=>{
@@ -594,10 +615,13 @@ stageCards.forEach((cards,i)=>{
 });
 document.getElementById('stageFoot0').innerHTML =
   'Frequ\u00eancia ' + r_.frequency.toFixed(2) + ' \u00b7 ThruPlays ' + fmtNum(r_.thruplay) + ' \u00b7 V\u00eddeo 75% ' + fmtNum(r_.videoP75) + ' \u00b7 V\u00eddeo 100% ' + fmtNum(r_.videoP100) +
-  '. Campanha <code>01 | [Reconhecimento] | AP Novo Campeche Floripa</code> (objetivo Reconhecimento, pausada desde 18/09). Alcance = valor real da campanha. Gerou <strong>2</strong> "Viu Conte\u00fado" e <strong>1</strong> conversa iniciada como a\u00e7\u00e3o secund\u00e1ria; LPV = 0 (n\u00e3o otimiza por visita).';
+  '. Campanha <code>01 | [Reconhecimento] | AP Novo Campeche Floripa</code> (objetivo Reconhecimento). Alcance = valor real da campanha. Gerou <strong>2</strong> "Viu Conte\u00fado" e <strong>1</strong> conversa iniciada como a\u00e7\u00e3o secund\u00e1ria; LPV = 0 (n\u00e3o otimiza por visita).';
 document.getElementById('stageFoot1').innerHTML =
   'Frequ\u00eancia ' + v_.frequency.toFixed(2) + ' \u00b7 Alcance ' + fmtNum(v_.reach) + ' \u00b7 ThruPlays ' + fmtNum(v_.thruplay) + ' \u00b7 V\u00eddeo 75% ' + fmtNum(v_.videoP75) +
-  '. Campanha <code>02 | [Vendas] AP Novo Campeche</code> (objetivo Vendas, otimizada pela convers\u00e3o <em>Viu conte\u00fado</em>, pausada desde 18/09). Gerou <strong>1</strong> conversa iniciada como a\u00e7\u00e3o secund\u00e1ria. CTR = cliques no link \u00f7 impress\u00f5es.';
+  '. Campanha <code>02 | [Vendas] AP Novo Campeche</code> (objetivo Vendas, otimizada pela convers\u00e3o <em>Viu conte\u00fado</em>). Gerou <strong>1</strong> conversa iniciada como a\u00e7\u00e3o secund\u00e1ria. CTR = cliques no link \u00f7 impress\u00f5es.';
+document.getElementById('stageFoot2').innerHTML =
+  'Frequ\u00eancia ' + l_.frequency.toFixed(2) + ' \u00b7 Alcance ' + fmtNum(l_.reach) + ' \u00b7 Viu Conte\u00fado (site) ' + fmtNum(l_.viuCustom) + ' \u00b7 ViewContent ' + fmtNum(l_.viewContent) +
+  '. Campanha <code>03 | [LEADS] Novo Campeche</code> (objetivo Leads, formul\u00e1rio instant\u00e2neo). Come\u00e7ou em 10/09/2026 e entregou de 11 a 17/09. Sem v\u00eddeo (an\u00fancio est\u00e1tico). CTR = cliques no link \u00f7 impress\u00f5es.';
 </script>
 </body>
 </html>
